@@ -63,10 +63,11 @@ export default function Page() {
           <div className="px-8 sm:pt-8 w-full">
             <h1 className="text-xl font-bold mb-6 sm:text-2xl">Summary</h1>
             <div className="flex flex-col justify-center items-center gap-6 sm:gap-4">
-              {summarys.map((item) => {
+              {summarys.map((item, index) => {
                 return (
                   <div
                     className={`${item.bgColor} w-full flex justify-between items-center p-4 rounded-lg`}
+                    key={index}
                   >
                     <div className="flex justify-center items-center gap-2">
                       <Image
