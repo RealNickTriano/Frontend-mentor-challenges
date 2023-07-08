@@ -13,9 +13,9 @@ export default function Home() {
   ];
   return (
     <main className="flex min-h-screen flex-col items-center justify-start p-24 gap-4">
-      {challenges.map((item) => {
+      {challenges.map((item, index) => {
         return (
-          <Link href={item.ref} className="hover:text-blue-400">
+          <Link href={item.ref} className="hover:text-blue-400" key={index}>
             {item.name}
           </Link>
         );
